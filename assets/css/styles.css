@@ -74,7 +74,7 @@
     position: absolute;
     right: 0;
     margin-bottom: 200px;
-    transition: 4s;
+    transition: 5s;
     animation: go-back 3s infinite alternate;
     z-index: -1;
     
