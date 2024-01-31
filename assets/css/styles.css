@@ -645,6 +645,16 @@ svg {
 .show-scroll{
     bottom: 3rem;
 }
+.home__content p{
+    text-align: left;
+}
+.home__content h1{
+    text-align: left;
+}
+
+.home__description span{
+    color: var(--first-color);
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
@@ -661,6 +671,7 @@ svg {
     .services__card{
         padding-block: 1.5rem;
     }
+    
 }
 
 /* For medium devices */
@@ -674,6 +685,7 @@ svg {
         grid-template-columns: 360px;
         justify-content: center;
     }
+    
 }
 
 
