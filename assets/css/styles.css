@@ -68,7 +68,9 @@
   padding: 0;
   margin: 0;
 }
-
+.icone{
+    height: 40px;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -200,6 +202,9 @@ svg {
         backdrop-filter: blur(24px);
         -webkit-backdrop-filter: blur(24px);
         transition: right .4s;
+    }
+    .icone{
+        height: 30px;
     }
 }
 
@@ -725,6 +730,7 @@ svg {
     .projects__container{
         grid-template-columns: repeat(2, 352px);
     }
+    
 }
 /* For large devices */
 @media screen and (min-width: 1023px){
@@ -758,12 +764,14 @@ svg {
         backdrop-filter: blur(25px);
         -webkit-backdrop-filter: blur(25px);
     }
+    
 }
 
 @media screen and (min-width: 1152px){
     .container{
         margin-inline: auto;
     }
+
 
     .home__container{
         grid-template-columns: 455px 550px;
