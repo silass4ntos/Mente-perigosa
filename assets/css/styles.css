@@ -20,7 +20,7 @@
 
   --hue: 10;
   --first-color: hsl(0, 100%, 44%);
-  --first-color-alt: hsl(0, 60%, 50%);
+  --first-color-alt: hsl(0, 100%, 44%);
   --title-color: hsl(228, 8%, 95%);
   --text-color: hsl(228, 8%, 65%);
   --body-color: hsl(0, 0%, 0%);
@@ -265,7 +265,7 @@ svg {
 
 .home__content{
     display: grid;
-    row-gap: 2rem;
+
 }
 
 .home__data{
@@ -295,8 +295,11 @@ svg {
     display: flex;
     justify-content: center;
     column-gap: 1.25rem;
-}
 
+}
+.bx{
+    font-size: 40px;
+}
 .home__social-link{
     display: flex;
     background-color: var(--first-color-alt);
@@ -760,14 +763,12 @@ svg {
         width: 550px;
     }
 
-    .home__content{
-        row-gap: 4.5rem;
-    }
-
     .home__description{
         margin-block: 1.5rem 2.5rem;
     }
-
+    .home__description span{
+        color: hsl(0, 100%, 44%);
+    }
     .home__social{
         column-gap: 1.5rem;
     }
