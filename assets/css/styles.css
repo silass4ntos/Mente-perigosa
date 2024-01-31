@@ -68,6 +68,17 @@
   padding: 0;
   margin: 0;
 }
+.last {
+    opacity: 60%;
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-bottom: 200px;
+    transition: 4s;
+    animation: go-back 3s infinite alternate;
+    z-index: -1;
+    
+}
 .icone{
     height: 40px;
 }
@@ -205,6 +216,16 @@ svg {
     }
     .icone{
         height: 30px;
+    }
+    .last {
+        opacity: 50%;
+        z-index: -1;
+        display: flex;
+        position: absolute;
+        right: 0;
+        transition: 5s;
+        animation: go-back 3s infinite alternate;
+        width: 150px;
     }
 }
 

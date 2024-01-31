@@ -344,37 +344,37 @@
          <div class="footer__container container grid">
             <div>
                <h1 class="footer__title">
-                  Guilherme <span>C3</span>
+                  Sorrisão<span>‿</span>
                </h1>
 
                <h2 class="footer__education">
-                  Desenvolvedor Front-end
+                  Musico ♪
                </h2>
             </div>
 
             <div class="footer__social">
                <a href="#" target="_blank" class="footer__social-link">
-                  <i class="ri-facebook-circle-line"></i>
+                  <i class='bx bxl-facebook-circle'></i>
                </a>
 
                <a href="#" target="_blank" class="footer__social-link">
-                  <i class="ri-instagram-line"></i>
+                  <i class="bx bxl-instagram"></i>
                </a>
 
                <a href="#" target="_blank" class="footer__social-link">
-                  <i class="ri-twitter-line"></i>
+                  <i class="bx bxl-twitter"></i>
                </a>
             </div>
 
             <span class="footer__copy">
-               &#169; Copyright Nexos. Todos os Direitos Reservados
+               &#169; Copyright Sorrisão. Todos os Direitos Reservados
             </span>
          </div>
       </footer>
-
+      <img src="assets/img/PERSONAGEM FLUTUANTE 1.png" alt=""class="last " id="scrolling-image">
       <!--========== SCROLL UP ==========-->
       <a href="#" class="scrollup" id="scroll-up">
-         <i class="ri-arrow-up-line"></i>
+         <i class='bx bx-up-arrow-alt' ></i>
       </a>
 
       <!--=============== SCROLLREVEAL ===============-->
@@ -385,5 +385,34 @@
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
+      <!--=============== PERSON FLOAT ===============-->
+      <script>
+         const image = document.getElementById("scrolling-image");
+         let lastScrollTop = 0;
+     
+         window.addEventListener("scroll", () => {
+             const scrollY = window.scrollY;
+             const startScroll = 400;
+             const stopScroll = 800;
+     
+             let positionY = -scrollY / 1;
+     
+             // Limita a posição da imagem para que ela não suba indefinidamente
+             positionY = Math.min(positionY, 0);
+     
+             // Verifica a direção da rolagem
+             const isScrollingUp = scrollY < lastScrollTop;
+             lastScrollTop = scrollY;
+     
+             // Define a posição vertical da imagem
+             if (isScrollingUp) {
+                 // Se estiver rolando para cima, a imagem desce
+                 image.style.bottom = `${positionY}px`;
+             } else {
+                 // Se estiver rolando para baixo, a imagem sobe
+                 image.style.bottom = `${positionY + 10}px`; // Ajuste a velocidade de subida aqui
+             }
+         });
+     </script>
    </body>
 </html>
