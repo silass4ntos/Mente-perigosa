@@ -8,7 +8,7 @@
       <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
       <!--=============== REMIXICONS ===============-->
-      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
@@ -28,10 +28,6 @@
                   <li class="nav__item">
                      <a href="#home" class="nav__link">Home</a>
                   </li>
-
-                  <li class="nav__item">
-                     <a href="#about" class="nav__link">Sobre</a>
-                  </li> 
                   
                   <li class="nav__item">
                      <a href="#services" class="nav__link">Serviços</a>
@@ -62,97 +58,37 @@
       <!--==================== MAIN ====================-->
       <main class="main">
          <!--==================== HOME ====================-->
-         <section class="home section" id="home">
+         <section class="about section" id="home">
             <div class="home__container container grid">
                <div class="home__content">
                   <div class="home__data">
-                     <h3 class="home__subtitle">
-                        Olá, Eu sou o
-                     </h3>
 
-                     <h1 class="home__title">Guilherme</h1>
+                     <h1 class="home__description ">Esse é o primeiro lançamento do <span class="">Sorrisão</span> na cena do trap! </h1>
 
-                     <h3 class="home__education">Desenvolvedor Front-end</h3>
-                     
                      <p class="home__description">
-                        conhecimento em desenvolvimento e design web, 
-                        eu construo projetos com grandes resultados para empresas.
+                        Deu inicio na composição de musicas como um hobby 
+                        lá em 2021, após mostrar seu som para alguns amigos, 
+                        muitos deles incentivaram a lançar, e a partir daquele 
+                        momento até hoje ele buscou maneiras de fazer sua musica 
+                        chegar ao publico. E agora você já pode fazer o pré-save abaixo!
                      </p>
 
-                     <a href="#contact" class="button">Vamos Conversar!</a>
                   </div>
 
                   <div class="home__social">
                      <a href="#" target="_blank" class="home__social-link">
-                        <i class="ri-instagram-line"></i>
+                        <i class="bx bxl-spotify"></i>
                      </a>
                      <a href="#" target="_blank" class="home__social-link">
-                        <i class="ri-linkedin-box-line"></i>
+                        <i class='bx bxl-deezer'></i>
                      </a>
                      <a href="#" target="_blank" class="home__social-link">
-                        <i class="ri-github-fill"></i>
+                        <i class='bx bxl-apple' ></i>
+                     </a>
+                     <a href="#" target="_blank" class="home__social-link">
+                        <i class='bx bxl-youtube' ></i>
                      </a>
                   </div>
-               </div>
-
-               <div class="home__image">
-                  <svg class="home__blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
-                     <mask id="maskBlob" mask-type="alpha">
-                        <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
-                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
-                        447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
-                        587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
-                        438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
-                     </mask>
-                     <g mask="url(#maskBlob)">
-                        <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
-                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
-                        447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
-                        587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
-                        438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
-                  
-                        <rect x="37" width="476" height="630" fill="url(#pattern0)"/>
-                     </g>
-                  
-                     <rect x="37" width="476" height="300" fill="url(#pattern1)"/>
-                  
-                     <defs>
-                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                           <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
-                        </pattern>
-                  
-                        <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                           <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
-                        </pattern>
-                  
-                        <!-- Insert your profile (recommended size: 640 x 940) -->
-                        <image class="home__img" id="imageBlob" width="640" height="925" href="assets/img/perfil.png">
-                     </defs>
-                  </svg>
-               </div>
-            </div>
-         </section>
-
-         <!--==================== ABOUT ====================-->
-         <section class="about section" id="about">
-            <div class="about__container container grid">
-               <div class="about__data">
-                  <h3 class="section__subtitle">
-                     Minha <span>Introdução</span>
-                  </h3>
-
-                  <h2 class="section__title">
-                     Sobre mim
-                  </h2>
-
-                  <p class="about__description">
-                     Desenvolvedor frontend, crio páginas web com
-                     Interface de usuário UI / UX, tenho anos de
-                     experiência e muitos clientes estão satisfeitos com o
-                     projetos realizados.
-                  </p>
-
-                  <a href="#contact" class="button">Contate-me</a>
                </div>
 
                <div class="about__image">
@@ -385,8 +321,8 @@
                Contate-me
             </h2>
 
-            <div class="contact__container container grid">
-               <form action="" class="contact__form" id="contact-form">
+            <div class="container grid">
+               <form method="post" action="https://formsubmit.co/joao.bielgame11@gmail.com" class="contact__form" id="contact-form">
                <div class="contact__group">
                   <input type="text" name="user_name" required placeholder="Digite seu nome" class="contact__input">
                   <input type="email" name="user_email" required placeholder="Digite seu Email" class="contact__input">
