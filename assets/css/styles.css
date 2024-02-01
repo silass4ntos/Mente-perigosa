@@ -71,6 +71,9 @@
 .services__card i{
     color: var(--first-color);
 }
+.services__card a{
+    padding: 50px;
+}
 .last {
     opacity: 60%;
     display: flex;
