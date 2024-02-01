@@ -539,6 +539,7 @@ svg {
 /*=============== CONTACT ===============*/
 .contact__container{
     padding-top: 1rem;
+    
 }
 
 .contact__form,
@@ -850,12 +851,16 @@ svg {
     }
 
     .services__container{
-        grid-template-columns: repeat(3, 352px);
-        padding-block: 2.5rem 4rem;
+        grid-template-columns: repeat(4, 352px);
+        padding-block: 2.5rem 3rem;
     }
 
     .services__card{
-        padding: 3.5rem 2rem;
+        padding: 3.5rem 1rem;
+    }
+    .services__card i{
+        font-size: 50px;
+        color: var(--first-color);
     }
 
     .projects__container{
