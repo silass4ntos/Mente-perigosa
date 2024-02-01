@@ -68,6 +68,9 @@
   padding: 0;
   margin: 0;
 }
+.services__card i{
+    color: var(--first-color);
+}
 .last {
     opacity: 60%;
     display: flex;
