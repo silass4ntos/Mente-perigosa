@@ -860,7 +860,7 @@ svg {
     }
 
     .services__container{
-        grid-template-columns: repeat(4, 352px);
+        grid-template-columns: repeat(3, 352px);
         padding-block: 2.5rem 3rem;
     }
 
